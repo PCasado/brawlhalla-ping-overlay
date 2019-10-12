@@ -1,1 +1,1 @@
-python3 -m PyInstaller --add-data="config.ini;README.PLEASE.txt" --onefile index.py
+python3 -m PyInstaller --add-data="config.ini;README.PLEASE.txt" --onefile index.py && copy config.ini dist && copy README.PLEASE.txt dist
