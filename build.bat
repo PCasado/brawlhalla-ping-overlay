@@ -1,0 +1,1 @@
+python3 -m PyInstaller --add-data="config.ini;README.PLEASE.txt" --onefile index.py
