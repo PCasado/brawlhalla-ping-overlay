@@ -12,8 +12,8 @@ class App:
   def __init__(self, master=None):
     self.frame = Frame(master)
     self.frame.pack()
-    Label(master, textvariable=txt_ping, font=('Consolas','15'), fg='white', bg='darkgray').pack()
-    Label(master, textvariable=txt_variance, font=('Consolas','15'), fg='white', bg='darkgray').pack()
+    Label(master, textvariable=txt_ping, font=('Consolas','7'), fg='lightgreen', bg='#1c1c1c').pack()
+    Label(master, textvariable=txt_variance, font=('Consolas','7'), fg='lightgreen', bg='#1c1c1c').pack()
 
 
 def get_ping():
@@ -81,13 +81,14 @@ if __name__ == "__main__":
 
   root = Tk()
   root.title = ''
-
+  root.tk.call('tk', 'scaling', 3.0)
   root.overrideredirect(True)
-  root.geometry("+0+0")
-  root.lift()
+  root.geometry("+0+18")
+  # root.lift()
   root.wm_attributes("-topmost", True)
-  root.wm_attributes("-disabled", True)
-  root.wm_attributes('-alpha', 0.7)
+  # root.wm_attributes("-disabled", True)
+  root.wm_attributes("-transparentcolor", "#1c1c1c")
+
 
   txt_ping = StringVar()
   txt_ping.set('0')
