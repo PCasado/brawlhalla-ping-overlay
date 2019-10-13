@@ -68,9 +68,6 @@ def pingdata(ping):
   
   return (lastTen, variance, ping_quality, variance_quality, ping)
 
-def change_server(event):
-  print('test')
-
 if __name__ == "__main__":
   config = configparser.ConfigParser()
   config.read('config.ini')
@@ -85,11 +82,11 @@ if __name__ == "__main__":
   root = Tk()
   root.title = ''
 
-  # root.overrideredirect(True)
+  root.overrideredirect(True)
   root.geometry("+0+0")
-  # root.lift()
+  root.lift()
   root.wm_attributes("-topmost", True)
-  # root.wm_attributes("-disabled", True)
+  root.wm_attributes("-disabled", True)
   root.wm_attributes('-alpha', 0.7)
 
   txt_ping = StringVar()

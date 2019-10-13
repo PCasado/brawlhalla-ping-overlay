@@ -1,1 +1,1 @@
-python3 -m PyInstaller --add-data="config.ini;README.PLEASE.txt" --onefile index.py && copy config.ini dist && copy README.PLEASE.txt dist
+python3 -m PyInstaller --add-data="config.ini;README.PLEASE.txt" --distpath brawlhalla-ping-overlay --onefile brawlhalla-ping-overlay.py && copy config.ini brawlhalla-ping-overlay && copy README.PLEASE.txt brawlhalla-ping-overlay
